@@ -3,8 +3,7 @@
     let myImage = document.getElementById('myImage');
     let myButton = document.getElementById('myButton');
     let myReset = document.getElementById('myReset')
-    let myPitch = document.getElementById('myPitch');
-    let myRate = document.getElementById('myRate');
+    
 
     myButton.addEventListener('click', function(){
         main();
@@ -14,9 +13,6 @@
         reset();
     })
 
-    myPitch.addEventListener('type', function(){
-
-    })
 
     function main(){
          let dezeTextWordtHet = makeThisSentence();
@@ -59,12 +55,9 @@
     }
 
     function reset(){
-        let tekst = ("....")
-        myText.innerHTML = tekst;
-        myImage.scr = ("https://news.bitcoin.com/wp-content/uploads/2020/10/a-look-at-the-fascist-agenda-behind-the-great-reset-and-the-wefs-reboot-propaganda.jpg")
+        document.location.reload()
          
     }
-    
     
     
     const onderwerp = ["I", "He", "Bob"];
@@ -75,7 +68,3 @@
     let arrayLength = onderwerp.length;
     let woord2Length = werkwoord.length;
     let woord3Length = restwoord.length;
-
-
-  
-    
